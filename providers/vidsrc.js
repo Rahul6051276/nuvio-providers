@@ -1,9 +1,9 @@
-const name = "Pikashow Server (Vidsrc)";
+const name = "Pikashow Pro (Vidsrc)";
 const id = "vidsrc_pika";
 
 async function getSources(movieId, type) {
-    // यह वही सर्वर है जिससे पिकासो और बड़ी साइट्स लिंक लेती हैं
-    const baseUrl = "https://vidsrc.to/embed";
+    // यहाँ 'vidsrc.xyz' या 'vidsrc.pm' का उपयोग करें, ये ज़्यादा स्टेबल हैं
+    const baseUrl = "https://vidsrc.xyz/embed";
     
     try {
         const url = type === "movie" 
@@ -11,9 +11,13 @@ async function getSources(movieId, type) {
             : `${baseUrl}/tv/${movieId}`;
 
         return [{
-            name: "Pikashow Multi-Server",
+            name: "Pikashow Multi-Source",
             url: url,
-            type: "embed" 
+            type: "embed",
+            headers: {
+                "Referer": "https://vidsrc.xyz/",
+                "User-Agent": "Mozilla/5.0"
+            }
         }];
     } catch (error) {
         return [];
