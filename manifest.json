@@ -1,18 +1,13 @@
 {
-  "name": "Rahul's Nuvio Repo",
-  "version": "5.5.0",
+  "name": "Rahul Repo",
+  "version": "1.0.0",
   "scrapers": [
     {
-      "id": "moviesdrive",
-      "name": "Moviesdrive Premium",
-      "description": "High Speed Movies & TV",
-      "version": "1.0.0",
-      "author": "Rahul",
+      "id": "vidsrc",
+      "name": "VidSrc",
       "supportedTypes": ["movie", "tv"],
-      "filename": "providers/moviesdrive.js",
-      "enabled": true,
-      "logo": "https://moviesdrive.forum/favicon.ico",
-      "contentLanguage": ["hi", "en"]
+      "filename": "providers/vidsrc.js",
+      "enabled": true
     }
   ]
 }
