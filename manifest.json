@@ -1,13 +1,28 @@
 {
-  "name": "Rahul Test",
-  "version": "9.9.9",
+  "name": "Rahul's Nuvio Repo",
+  "version": "1.5.0",
   "scrapers": [
-    {
-      "id": "vidsrc",
-      "name": "VidSrc",
-      "supportedTypes": ["movie", "tv"],
-      "filename": "providers/vidsrc.js",
-      "enabled": true
-    }
+    { "id": "vidsrc", "name": "VidSrc", "description": "Multi-server auto updating links", "version": "1.0.0", "author": "Nuvio Team", "supportedTypes": ["movie", "tv"], "filename": "providers/vidsrc.js", "enabled": true, "logo": "https://vidsrc.to/favicon.ico", "contentLanguage": ["en"] },
+    { "id": "vegamovies", "name": "Vegamovies", "description": "Vegamovies streaming links", "version": "1.1.0", "author": "Nuvio Team", "supportedTypes": ["movie", "tv", "series"], "filename": "providers/vegamovies.js", "enabled": true, "logo": "https://vegamovies.actor/favicon.ico", "contentLanguage": ["en"] },
+    { "id": "moviebox", "name": "MovieBox", "description": "Multi-language (DASH + MP4)", "version": "1.1.0", "author": "Nuvio Team", "supportedTypes": ["movie", "tv"], "filename": "providers/moviebox.js", "enabled": true, "logo": "https://h5-static.aoneroom.com/oneroomStatic/public/_nuxt/web-logo.apJjVir2.svg", "contentLanguage": ["en", "hin", "tam", "tel"] },
+    { "id": "castle", "name": "Castle", "description": "Multi Lang (Hindi, Tamil, Telugu)", "version": "1.0.0", "author": "Nuvio Team", "supportedTypes": ["movie", "tv"], "filename": "providers/castle.js", "enabled": true, "logo": "https://static.hbayy.com/simple-blog-13/prod/_nuxt/big-logo.DESZ4mBj.png", "contentLanguage": ["en", "hi", "ta", "te", "ml", "kn"] },
+    { "id": "hdhub4u", "name": "HDHub4u", "description": "High-speed direct links", "version": "1.1.0", "author": "Nuvio Team", "supportedTypes": ["movie", "tv"], "filename": "providers/hdhub4u.js", "enabled": true, "logo": "https://new3.hdhub4u.fo/wp-content/uploads/2021/05/hdhub4ulogo.png", "contentLanguage": ["en", "hin"] },
+    { "id": "streamflix", "name": "StreamFlix", "description": "Direct links via API", "version": "1.0.0", "author": "Nuvio Team", "supportedTypes": ["movie", "tv"], "filename": "providers/streamflix.js", "enabled": true, "logo": "https://streamflix.app/assets/images/logo-text-148x72.png", "contentLanguage": ["en", "hin"] },
+    { "id": "4khdhub", "name": "4KHDHub", "description": "4K direct links", "version": "1.0.2", "author": "Nuvio Team", "supportedTypes": ["movie", "tv"], "filename": "providers/4khdhub.js", "enabled": true, "logo": "https://4khdhub.fans/favicon.ico", "contentLanguage": ["en"] },
+    { "id": "animekai", "name": "AnimeKai", "description": "Anime episodes", "version": "1.1.0", "author": "Nuvio Team", "supportedTypes": ["movie", "tv"], "filename": "providers/animekai.js", "enabled": true, "logo": "https://animekai.to/assets/uploads/37585a39fe8c8d8fafaa2c7bfbf5374ecac859ea6a0288a6da2c61f5.png", "contentLanguage": ["en"] },
+    { "id": "uhdmovies", "name": "UHDMovies", "description": "UHD streaming", "version": "1.2.0", "author": "Nuvio Team", "supportedTypes": ["movie", "tv"], "filename": "providers/uhdmovies.js", "enabled": true, "logo": "https://uhdmovies.rip/wp-content/uploads/2021/03/cropped-output-onlinepngtools-1-32x32.png", "contentLanguage": ["en"] },
+    { "id": "moviesmod", "name": "MoviesMod", "description": "Multiple quality options", "version": "1.0.1", "author": "Nuvio Team", "supportedTypes": ["movie", "tv"], "filename": "providers/moviesmod.js", "enabled": true, "logo": "https://moviesmod.plus/wp-content/uploads/2022/10/moviesmod.png", "contentLanguage": ["en"] },
+    { "id": "netmirror", "name": "NetMirror", "description": "Netmirror streaming", "version": "1.0.2", "author": "Nuvio Team", "supportedTypes": ["movie", "tv"], "filename": "providers/netmirror.js", "enabled": true, "logo": "https://net2025.cc/favicon.ico", "contentLanguage": ["en"] },
+    { "id": "vixsrc", "name": "Vixsrc", "description": "Auto quality M3U8", "version": "1.0.0", "author": "Nuvio Team", "supportedTypes": ["movie", "tv"], "filename": "providers/vixsrc.js", "enabled": true, "logo": "https://vixsrc.to/favicon.ico", "contentLanguage": ["en"] },
+    { "id": "dvdplay", "name": "DVDPlay", "description": "Direct download links", "version": "1.0.2", "author": "Nuvio Team", "supportedTypes": ["movie", "tv"], "filename": "providers/dvdplay.js", "enabled": true, "logo": "https://dvdplay.rodeo/dvdplay-icon.png", "contentLanguage": ["hin", "tam", "mal"] },
+    { "id": "yflix", "name": "YFlix", "description": "YFlix streaming", "version": "1.1.2", "author": "Nuvio Team", "supportedTypes": ["movie", "tv"], "filename": "providers/yflix.js", "enabled": true, "logo": "https://yflix.to/assets/uploads/2f505f3de3c99889c1a72557f3e3714fc0c457b0.png", "contentLanguage": ["en"] },
+    { "id": "videasy", "name": "VIDEASY", "description": "Multi server support", "version": "1.0.0", "author": "Nuvio Team", "supportedTypes": ["movie", "tv"], "filename": "providers/videasy.js", "enabled": true, "logo": "https://www.videasy.net/logo.png", "contentLanguage": ["hi", "en"] },
+    { "id": "mallumv", "name": "MalluMV", "description": "South & Hindi movies", "version": "1.0.1", "author": "Nuvio Team", "supportedTypes": ["movie"], "filename": "providers/mallumv.js", "enabled": true, "logo": "https://mallumv.fit/favicon.ico", "contentLanguage": ["hi", "ta", "te"] },
+    { "id": "vidlink", "name": "Vidlink", "description": "TMDB based streaming", "version": "1.0.0", "author": "Nuvio Team", "supportedTypes": ["movie", "tv"], "filename": "providers/vidlink.js", "enabled": true, "logo": "https://vidlink.pro/favicon.ico", "contentLanguage": ["en"] },
+    { "id": "vidnest", "name": "Vidnest", "description": "Encrypted sources", "version": "1.0.0", "author": "Nuvio Team", "supportedTypes": ["movie", "tv"], "filename": "providers/vidnest.js", "enabled": true, "logo": "https://vidnest.fun/favicon.ico", "contentLanguage": ["en"] },
+    { "id": "vidnest-anime", "name": "VidnestAnime", "description": "Anime with Hindi servers", "version": "1.0.0", "author": "Nuvio Team", "supportedTypes": ["movie", "tv"], "filename": "providers/vidnest-anime.js", "enabled": true, "logo": "https://vidnest.fun/favicon.ico", "contentLanguage": ["hi", "en", "ja"] },
+    { "id": "cinevibe", "name": "Cinevibe", "description": "Movie scraper", "version": "1.0.0", "author": "Nuvio Team", "supportedTypes": ["movie"], "filename": "providers/cinevibe.js", "enabled": true, "logo": "https://cinevibe.asia/assets/favicon-32x32.png", "contentLanguage": ["en"] },
+    { "id": "showbox", "name": "ShowBox", "description": "Multiple quality options", "version": "1.0.0", "author": "Nuvio Team", "supportedTypes": ["movie", "tv"], "filename": "providers/showbox.js", "enabled": true, "logo": "https://raw.githubusercontent.com/tapframe/nuvio-providers/main/Assets/Logo-2.png", "contentLanguage": ["en"] },
+    { "id": "dahmermovies", "name": "DahmerMovies", "description": "Alternative streaming", "version": "1.0.1", "author": "Nuvio Team", "supportedTypes": ["movie", "tv"], "filename": "providers/dahmermovies.js", "enabled": true, "logo": "https://image.similarpng.com/file/similarpng/very-thumbnail/2021/05/Letter-D-logo-design-template-with-geometric-shape-style-on-transparent-background-PNG.png", "contentLanguage": ["en"] }
   ]
 }
