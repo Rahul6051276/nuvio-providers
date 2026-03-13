@@ -1,6 +1,6 @@
 {
-  "name": "Rahul Repo",
-  "version": "1.0.0",
+  "name": "Rahul Test",
+  "version": "9.9.9",
   "scrapers": [
     {
       "id": "vidsrc",
