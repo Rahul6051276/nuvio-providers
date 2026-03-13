@@ -1,6 +1,6 @@
 {
   "name": "Rahul's Nuvio Repo",
-  "version": "1.5.0",
+  "version": "1.6.0",
   "scrapers": [
     { "id": "vidsrc_pika", "name": "Pikashow Server (Vidsrc)", "description": "Multi-server auto updating links", "version": "1.0.0", "author": "Rahul", "supportedTypes": ["movie", "tv"], "filename": "providers/vidsrc.js", "enabled": true, "logo": "https://vidsrc.to/favicon.ico", "contentLanguage": ["hi", "en"] },
     { "id": "vegamovies", "name": "Vegamovies", "description": "Vegamovies streaming links", "version": "1.1.0", "author": "Rahul", "supportedTypes": ["movie", "tv", "series"], "filename": "providers/vegamovies.js", "enabled": true, "logo": "https://vegamovies.actor/favicon.ico", "contentLanguage": ["hi", "en"] },
