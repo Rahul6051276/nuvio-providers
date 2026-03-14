@@ -69,7 +69,7 @@
     {
       "id": "dahmermovies",
       "name": "DahmerMovies",
-      "description": "Dahmer Movies streaming service. Can be slow at times to fetch and stream. Only use if needed.",
+      "description": "Dahmer Movies streaming service. Can be slow at times.",
       "version": "1.0.1",
       "author": "Nuvio Team",
       "supportedTypes": ["movie", "tv"],
@@ -82,7 +82,7 @@
     {
       "id": "hdhub4u",
       "name": "HDHub4u",
-      "description": "HDHub4u direct download links with multiple hoster support",
+      "description": "HDHub4u direct download links",
       "version": "1.1.0",
       "author": "Nuvio Team",
       "supportedTypes": ["movie", "tv"],
@@ -120,7 +120,7 @@
     {
       "id": "netmirror",
       "name": "NetMirror",
-      "description": "Streaming links from netmirror. Automatically disabled on iOS due to compatibility issues.",
+      "description": "Streaming links from netmirror.",
       "version": "1.0.2",
       "author": "Nuvio Team",
       "supportedTypes": ["movie", "tv"],
@@ -134,7 +134,7 @@
     {
       "id": "vidsrc",
       "name": "VidSrc",
-      "description": "VidSrc M3U8 streaming with multiple server support",
+      "description": "VidSrc M3U8 streaming",
       "version": "1.0.0",
       "author": "Nuvio Team",
       "supportedTypes": ["movie", "tv"],
@@ -159,7 +159,7 @@
     {
       "id": "moviebox",
       "name": "MovieBox",
-      "description": "MovieBox streaming with multiple language support",
+      "description": "MovieBox streaming support",
       "version": "1.0.1",
       "author": "Nuvio Team",
       "supportedTypes": ["movie", "tv"],
@@ -172,7 +172,7 @@
     {
       "id": "vixsrc",
       "name": "Vixsrc",
-      "description": "Vixsrc M3U8 streaming with auto quality selection",
+      "description": "Vixsrc M3U8 streaming",
       "version": "1.0.0",
       "author": "Nuvio Team",
       "supportedTypes": ["movie", "tv"],
@@ -184,7 +184,7 @@
     {
       "id": "dvdplay",
       "name": "DVDPlay",
-      "description": "DVDPlay direct download links with HubCloud extraction",
+      "description": "DVDPlay direct download links",
       "version": "1.0.1",
       "author": "Nuvio Team",
       "supportedTypes": ["movie", "tv"],
@@ -197,7 +197,7 @@
     {
       "id": "showbox",
       "name": "ShowBox",
-      "description": "ShowBox streaming with multiple quality options",
+      "description": "ShowBox streaming options",
       "version": "1.0.0",
       "author": "Nuvio Team",
       "supportedTypes": ["movie", "tv"],
@@ -224,7 +224,7 @@
     {
       "id": "videasy",
       "name": "VIDEASY",
-      "description": "VideoEasy streaming with multiple server support and languages",
+      "description": "VideoEasy multi-server support",
       "version": "1.0.0",
       "author": "Nuvio Team",
       "supportedTypes": ["movie", "tv"],
@@ -233,12 +233,12 @@
       "limited": true,
       "formats": ["m3u8", "mp4", "mkv"],
       "logo": "https://www.videasy.net/logo.png",
-      "contentLanguage": ["en", "de", "it", "fr", "hi", "es", "pt"]
+      "contentLanguage": ["en", "de", "hi"]
     },
     {
       "id": "mallumv",
       "name": "MalluMV",
-      "description": "MalluMV direct links with support for Tamil, Telugu, Hindi, Malayalam, and Kannada movies",
+      "description": "MalluMV direct links",
       "version": "1.0.0",
       "author": "Nuvio Team",
       "supportedTypes": ["movie"],
@@ -251,7 +251,7 @@
     {
       "id": "vidlink",
       "name": "Vidlink",
-      "description": "Vidlink streaming with encrypted TMDB ID support for movies and TV shows",
+      "description": "Vidlink streaming TMDB support",
       "version": "1.0.0",
       "author": "Nuvio Team",
       "supportedTypes": ["movie", "tv"],
@@ -264,7 +264,7 @@
     {
       "id": "vidnest",
       "name": "Vidnest",
-      "description": "Vidnest streaming with encrypted AES-GCM sources",
+      "description": "Vidnest streaming encrypted sources",
       "version": "1.0.0",
       "author": "Nuvio Team",
       "supportedTypes": ["movie", "tv"],
@@ -277,7 +277,7 @@
     {
       "id": "vidnest-anime",
       "name": "VidnestAnime",
-      "description": "Vidnest anime streaming with TMDB→AniList mapping and 5 servers",
+      "description": "Vidnest anime streaming",
       "version": "1.0.0",
       "author": "Nuvio Team",
       "supportedTypes": ["movie", "tv"],
@@ -291,7 +291,7 @@
     {
       "id": "vidrock",
       "name": "Vidrock",
-      "description": "Vidrock streaming with AES-CBC encrypted sources",
+      "description": "Vidrock streaming with AES-CBC",
       "version": "1.0.0",
       "author": "Nuvio Team",
       "supportedTypes": ["movie", "tv"],
