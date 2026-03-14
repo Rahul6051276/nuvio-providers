@@ -10,54 +10,78 @@ const Pikashow = {
         };
     },
 
-    // यह फंक्शन ही पक्का करेगा कि "Fetching from..." में नाम आए
+    // 1. सर्च लॉजिक: बॉलीवुड, हॉलीवुड और सीरीज तीनों को अलग-अलग चेक करेगा
     search: function(query) {
-        const types = ["bollywood", "hollywood", "series"];
+        const categories = ["bollywood", "hollywood", "series"];
         const headers = this.getHeaders();
         
-        // हम सभी कैटेगरीज को एक साथ चेक करेंगे
-        const promises = types.map(type => 
-            fetch(this.mainUrl + "/v1/api/videos?type=" + type + "&channel=pikashow", { headers })
+        const promises = categories.map(type => {
+            const url = this.mainUrl + "/v1/api/videos?type=" + type + "&channel=pikashow";
+            return fetch(url, { headers })
                 .then(res => res.json())
                 .then(data => {
-                    const records = data.records || data.series || [];
-                    return records.filter(m => {
-                        const title = m.t || m.title || "";
-                        return title.toLowerCase().includes(query.toLowerCase());
-                    }).map(m => ({
-                        name: m.t || m.title,
-                        poster: m.c || m.cover,
-                        link: "pikashow:" + (m.sortOrder || m.title) + ":" + type,
-                        type: type === "series" ? "tv" : "movie"
+                    const list = data.records || data.series || [];
+                    return list.filter(item => {
+                        const title = item.t || item.title || "";
+                        return title.toLowerCase().indexOf(query.toLowerCase()) !== -1;
+                    }).map(item => ({
+                        name: item.t || item.title,
+                        poster: item.c || item.cover,
+                        // लिंक में टाइप और आईडी दोनों भेज रहे हैं
+                        link: "pikashow|" + (item.sortOrder || item.title) + "|" + type,
+                        type: type === "series" ? "tv" : "movie",
+                        year: item.y || item.year
                     }));
                 })
-                .catch(() => [])
-        );
+                .catch(() => []);
+        });
 
         return Promise.all(promises).then(results => results.flat());
     },
 
+    // 2. लिंक लॉजिक: यहाँ से 1080p, 720p और 480p के अलग-अलग लिंक निकलेंगे
     loadLinks: function(data) {
-        const parts = data.split(":");
-        const id = parts[1];
+        const parts = data.split("|");
+        const videoId = parts[1];
         const type = parts[2];
-        
-        // लिंक निकालने का कोटलिन वाला लॉजिक
-        const url = this.mainUrl + "/v1/api/video?type=" + type + "&videoId=" + id + "&title=" + id + "&noseasons=1&noepisodes=0";
-        
-        return fetch(url, { headers: this.getHeaders() })
+        const headers = this.getHeaders();
+
+        // कोटलिन वाला वीडियो API पाथ
+        const url = this.mainUrl + "/v1/api/video?type=" + type + "&videoId=" + videoId + "&title=" + videoId + "&noseasons=1&noepisodes=0";
+
+        return fetch(url, { headers })
             .then(res => res.json())
             .then(json => {
-                if (json.data && (json.data.playUrl || json.data.videoUrl)) {
-                    return [{
-                        name: "PikaShow Premium Server",
-                        url: json.data.playUrl || json.data.videoUrl,
-                        headers: { "Referer": "https://samui390dod.com/" },
-                        type: "m3u8"
-                    }];
+                const links = [];
+                if (json.data) {
+                    const v = json.data;
+                    
+                    // अगर API में 'resolutions' की लिस्ट है (जैसा कोटलिन कोड में था)
+                    if (v.resolutions && v.resolutions.length > 0) {
+                        v.resolutions.forEach(res => {
+                            links.push({
+                                name: "PikaShow " + (res.label || "HD"),
+                                url: res.url,
+                                quality: res.label, // 1080p, 720p आदि
+                                headers: { "Referer": "https://samui390dod.com/" },
+                                type: "m3u8"
+                            });
+                        });
+                    } 
+                    // अगर रेजोल्यूशन नहीं है तो डायरेक्ट प्ले URL उठाओ
+                    else if (v.playUrl || v.videoUrl) {
+                        links.push({
+                            name: "PikaShow Default Server",
+                            url: v.playUrl || v.videoUrl,
+                            quality: v.q || "720p",
+                            headers: { "Referer": "https://samui390dod.com/" },
+                            type: "m3u8"
+                        });
+                    }
                 }
-                return [];
-            }).catch(() => []);
+                return links;
+            })
+            .catch(() => []);
     }
 };
 
