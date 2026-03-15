@@ -1,5 +1,5 @@
 {
-  "name": "Yoru's Repo",
+  "name": "Rahul's Nuvio Repo",
   "version": "1.0.0",
   "scrapers": [
     {
@@ -7,7 +7,7 @@
       "name": "4KHDHub",
       "description": "4KHDHub direct links",
       "version": "1.0.2",
-      "author": "Nuvio Team",
+      "author": "Rahul6051276",
       "supportedTypes": [
         "movie",
         "tv"
@@ -27,7 +27,7 @@
       "name": "AnimeKai",
       "description": "AnimeKai TV episodes via AnimeKai servers",
       "version": "1.1.0",
-      "author": "Nuvio Team",
+      "author": "Rahul6051276",
       "supportedTypes": [
         "movie",
         "tv"
@@ -45,7 +45,7 @@
       "name": "UHDMovies",
       "description": "UHD Movies streaming with multiple resolution",
       "version": "1.2.0",
-      "author": "Nuvio Team",
+      "author": "Rahul6051276",
       "supportedTypes": [
         "movie",
         "tv"
@@ -65,7 +65,7 @@
       "name": "MoviesMod",
       "description": "Movie and TV show streams from MoviesMod with multiple quality options",
       "version": "1.0.1",
-      "author": "Nuvio Team",
+      "author": "Rahul6051276",
       "supportedTypes": [
         "movie",
         "tv"
@@ -85,7 +85,7 @@
       "name": "DahmerMovies",
       "description": "Dahmer Movies streaming service. Can be slow at times to fetch and stream. Only use if needed.",
       "version": "1.0.1",
-      "author": "Nuvio Team",
+      "author": "Rahul6051276",
       "supportedTypes": [
         "movie",
         "tv"
@@ -105,7 +105,7 @@
       "name": "NetMirror",
       "description": "Streaming links from netmirror. Automatically disabled on iOS due to compatibility issues.",
       "version": "1.0.2",
-      "author": "Nuvio Team",
+      "author": "Rahul6051276",
       "supportedTypes": [
         "movie",
         "tv"
@@ -126,7 +126,7 @@
       "name": "StreamFlix",
       "description": "Direct links via StreamFlix API",
       "version": "1.0.0",
-      "author": "Nuvio Team",
+      "author": "Rahul6051276",
       "supportedTypes": [
         "movie",
         "tv"
@@ -147,7 +147,7 @@
       "name": "MovieBox",
       "description": "MovieBox streaming with multiple language support (DASH + MP4)",
       "version": "1.1.0",
-      "author": "Nuvio Team",
+      "author": "Rahul6051276",
       "supportedTypes": [
         "movie",
         "tv"
@@ -171,7 +171,7 @@
       "name": "Vixsrc",
       "description": "Vixsrc M3U8 streaming with auto quality selection",
       "version": "1.0.0",
-      "author": "Nuvio Team",
+      "author": "Rahul6051276",
       "supportedTypes": [
         "movie",
         "tv"
@@ -188,7 +188,7 @@
       "name": "DVDPlay",
       "description": "DVDPlay direct download links with HubCloud extraction",
       "version": "1.0.2",
-      "author": "Nuvio Team",
+      "author": "Rahul6051276",
       "supportedTypes": [
         "movie",
         "tv"
@@ -210,7 +210,7 @@
       "name": "YFlix",
       "description": "YFlix streaming",
       "version": "1.1.2",
-      "author": "Nuvio Team",
+      "author": "Rahul6051276",
       "supportedTypes": [
         "movie",
         "tv"
@@ -232,7 +232,7 @@
       "name": "VIDEASY",
       "description": "VideoEasy streaming with multiple server support and languages",
       "version": "1.0.0",
-      "author": "Nuvio Team",
+      "author": "Rahul6051276",
       "supportedTypes": [
         "movie",
         "tv"
@@ -261,7 +261,7 @@
       "name": "MalluMV",
       "description": "MalluMV direct links with support for Tamil, Telugu, Hindi, Malayalam, and Kannada movies",
       "version": "1.0.1",
-      "author": "Nuvio Team",
+      "author": "Rahul6051276",
       "supportedTypes": [
         "movie"
       ],
@@ -285,7 +285,7 @@
       "name": "Vidlink",
       "description": "Vidlink streaming with encrypted TMDB ID support for movies and TV shows",
       "version": "1.0.0",
-      "author": "Nuvio Team",
+      "author": "Rahul6051276",
       "supportedTypes": [
         "movie",
         "tv"
@@ -306,7 +306,7 @@
       "name": "Vidnest",
       "description": "Vidnest streaming with encrypted AES-GCM sources",
       "version": "1.0.0",
-      "author": "Nuvio Team",
+      "author": "Rahul6051276",
       "supportedTypes": [
         "movie",
         "tv"
@@ -327,7 +327,7 @@
       "name": "VidnestAnime",
       "description": "Vidnest anime streaming with TMDB→AniList mapping and 5 servers (hindi, satoru, miko, pahe, anya)",
       "version": "1.0.0",
-      "author": "Nuvio Team",
+      "author": "Rahul6051276",
       "supportedTypes": [
         "movie",
         "tv"
@@ -351,7 +351,7 @@
       "name": "Cinevibe",
       "description": "Cinevibe (Movies)",
       "version": "1.0.0",
-      "author": "Nuvio Team",
+      "author": "Rahul6051276",
       "supportedTypes": [
         "movie"
       ],
@@ -371,7 +371,7 @@
       "name": "Castle",
       "description": "Multi Lang provider",
       "version": "1.0.0",
-      "author": "Nuvio Team",
+      "author": "Rahul6051276",
       "supportedTypes": [
         "movie",
         "tv"
@@ -397,7 +397,7 @@
       "name": "ShowBox",
       "description": "ShowBox streaming with multiple quality options and versions",
       "version": "1.0.0",
-      "author": "Nuvio Team",
+      "author": "Rahul6051276",
       "supportedTypes": [
         "movie",
         "tv"
@@ -418,7 +418,7 @@
       "name": "HDHub4u",
       "description": "Direct links from HDHub4u with high-speed download support",
       "version": "1.1.0",
-      "author": "Nuvio Team",
+      "author": "Rahul6051276",
       "supportedTypes": [
         "movie",
         "tv"
@@ -440,7 +440,7 @@
       "name": "AllMovieLand",
       "description": "AllMovieLand streaming provider with multi-language support",
       "version": "1.0.0",
-      "author": "Nuvio Team",
+      "author": "Rahul6051276",
       "supportedTypes": [
         "movie",
         "tv"
@@ -463,7 +463,7 @@
       "name": "DooFlix",
       "description": "Fast streaming provider with direct TMDB integration",
       "version": "1.0.0",
-      "author": "Nuvio Team",
+      "author": "Rahul6051276",
       "supportedTypes": [
         "movie",
         "tv"
